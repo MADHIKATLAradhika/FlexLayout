@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Elements</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+       
+        background-color: black;
+      position: relative;
+      top: 50px;
+      width: 10S0%;
+      height: 700px;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    img {
+        height: 300px;
+        width: 40%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      margin: 0;
+      
+    }
+    .paragraph1 {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      margin: 0;
+      color: white;
+    }
+    .paragraph2 {
+        color: white;
+        padding-top: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+        padding: 10px 0;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar li {
+        padding: 10px;
+      }
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      
+  </div>
+
+    <img src="1.jpg" alt="Image">
+    <p class="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate accusamus quaerat, dicta reiciendis rem iusto aspernatur! Unde, possimus tenetur? Ex repellat perferendis dicta quis nostrum, soluta id ut ullam </p>
+    <p class="paragraph2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum obcaecati, ab veritatis voluptas fugit vel reprehenderit repellendus quasi accusantium, nobis a sit voluptatibus iste, quod voluptatem esse architecto? Nihil ea quisquam rerum deserunt maiores exercitationem optio amet sit? Neque earum architecto quisquam dolore velit debitis culpa vero, recusandae doloribus ipsa libero autem excepturi similique voluptate? Reiciendis ut voluptas libero, maiores facilis natus accusamus asperiores quo optio inventore totam. Corrupti, eius. Officiis voluptatibus voluptatem accusantium natus voluptas omnis in. Repellat ratione atque similique non libero voluptas eveniet, animi neque, molestiae porro dolor expedita, magnam asperiores nisi adipisci incidunt sunt iste.</p>
+  </div>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery with Hover Effect</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    header{
+        font-size: 30px;
+    }
+    .gallery {
+    background-color: black;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 90%;
+    }
+    .thumbnail {
+      position: relative;
+      top:20px;
+      width: 400px;
+      height: 500px;
+    
+      margin: 10px;
+      border: 2px solid #ccc;
+      transition: transform 0.3s ease-in-out;
+    }
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .thumbnail:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body> <center>
+    <header>
+        Image Gallery with Hover Effect
+    </header>
+    </center>
+  <div class="gallery">
+    <div class="thumbnail">
+      <img src="1.jpg" alt="Image 1">
+    </div>
+    <div class="thumbnail">
+      <img src="2.jpg" alt="Image 2">
+    </div>
+    <div class="thumbnail">
+      <img src="3.jpg" alt="Image 3">
+    </div>
+    
+  </div>
+</body>
+</html>
